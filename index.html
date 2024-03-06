@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <h4>Аэрополеты</h4>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link test-0-nav-1" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link test-0-nav-2" href="booking.html">Бронирование</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link test-0-nav-4" href="login.html">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- index -->
+    <div hidden id="index" class="container">
+        <section class="mt-5">
+            <h2 class="mb-4">Поиск полетов</h2>
+
+            <form data-page="booking" id="searchFlights">
+                <div class="row ">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pr-lg-0">
+                        <input required name="flights" id="from" type="text" class="form-control test-0-fd w-100"
+                            placeholder="откуда">
+                        <div class="invalid-feedback">Error message</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 pr-lg-0">
+                        <input required name="flights" id="to" type="text" class="form-control test-0-fd w-100"
+                            placeholder="куда">
+                        <div class="invalid-feedback">Error message</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-3 col-xl-3 mt-sm-0 pr-lg-0">
+                        <input required name="flights" id="fromDate" type="date" class="form-control test-0-fa w-100"
+                            placeholder="Дата отправления">
+                        <div class="invalid-feedback">Error message</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 mt-3 col-xl-2 mt-lg-0 pr-lg-0">
+                        <input name="flights" id="toDate" type="date" class="form-control test-0-fdt"
+                            placeholder="Дата возвращения">
+                        <div class="invalid-feedback">Error message</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 mt-3 col-xl-2 mt-lg-0 pr-lg-0">
+                        <input required name="flights" id="passengers" type="text" class="form-control test-0-fdt"
+                            placeholder="Количество пассажиров">
+                        <div class="invalid-feedback">Error message</div>
+                    </div>
+                    <div class="col-12 col-xl-1 px-2 mt-3 mt-xl-0">
+                        <button class="btn btn-success form-control test-0-fbs">Поиск</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="mb-4">Акции</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="assets/images/placeholder.jpg" class="card-img-top test-0-ai" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title test-0-an">Promotion 1</h5>
+                            <p class="card-text test-0-ad">Promotion text</p>
+                            <a href="#" class="btn btn-primary test-0-abm">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="assets/images/placeholder.jpg" class="card-img-top test-0-ai" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title test-0-an">Promotion 1</h5>
+                            <p class="card-text test-0-ad">Promotion text</p>
+                            <a href="#" class="btn btn-primary test-0-abm">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="assets/images/placeholder.jpg" class="card-img-top test-0-ai" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title test-0-an">Promotion 1</h5>
+                            <p class="card-text test-0-ad">Promotion text</p>
+                            <a href="#" class="btn btn-primary test-0-abm">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="assets/images/placeholder.jpg" class="card-img-top test-0-ai" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title test-0-an">Promotion 1</h5>
+                            <p class="card-text test-0-ad">Promotion text</p>
+                            <a href="#" class="btn btn-primary test-0-abm">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- history -->
+    <div hidden id="history" class="container">
+        <section class="mt-5">
+            <div class="d-flex justify-content-between align-items-start">
+                <h2 class="mb-4">
+                    Привет,
+                    <span class="test-3-name">Имя</span>
+                    <span class="test-3-last">Фамилия</span>
+                    <span class="test-3-last">Отчество</span>
+                </h2>
+                <a class="btn btn-sm btn-secondary test-3-logout" href="index.html">Выйти</a>
+            </div>
+
+            <p>Кол-во бронирований: <span class="test-3-numflights">10</span> бронирований</p>
+        </section>
+
+        <section class="mt-5 favorites">
+            <h4 class="mb-4">История бронирования</h4>
+            <ul class="nav nav-tabs mt-3 mb-3">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="profile.html">Активные брони</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="history.html">История бронирования</a>
+                </li>
+            </ul>
+            <table class="table table-hover table-bordered">
+                <tr>
+                    <th>Идентификатор машины</th>
+                    <th>Марка авто</th>
+                    <th>Название авто</th>
+                    <th>Номер машины</th>
+                    <th>Дата Бронирования</th>
+                    <th>Дата Возврата</th>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                    <td class="test-5-fp">
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                    <td class="test-5-fp">
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </div>
+
+    <!-- branches -->
+    <div hidden id="branches" class="container-fluid">
+        <div class="row vh-100">
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+
+                <div class="passengers">
+                    <h2>Данные о машине</h2>
+
+                    <table class="table table-bordered">
+                        <tr>
+                            <td class="test-90-name">Филиал 1</td>
+                        </tr>
+                        <tr>
+                            <td class="test-90-name">Toyota Corolla</td>
+                        </tr>
+                    </table>
+                    <a href="booking.html" class="btn test-90-bback btn-secondary">Back</a>
+                    <a href="booking.html" class="btn test-90-bconfirm btn-success">Confirm</a>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+                <div class="container w-50">
+                    <div class="mb-3">
+                        <h2>Филиал</h2>
+                        <form>
+                            <select name="branch" class="form-control">
+                                <option value="1" selected>Филиал 1</option>
+                                <option value="2">Филиал 2</option>
+                                <option value="3">Филиал 3</option>
+                                <option value="4">Филиал 4</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="mt-5">
+                        <h2>Машины в филиале</h2>
+                        <table class="table table-hover table-bordered">
+                            <tr>
+                                <th>Идентификатор машины</th>
+                                <th>Марка авто</th>
+                                <th>Название авто</th>
+                                <th>Номер машины</th>
+                            </tr>
+                            <tr class="selected">
+                                <td class="test-5-fc">QWERTY</td>
+                                <td>
+                                    Toyota
+                                </td>
+                                <td class="test-5-to">
+                                    Corolla
+                                </td>
+                                <td class="test-5-at">с234сг</td>
+                            </tr>
+                            <tr>
+                                <td class="test-5-fc">QWERTY</td>
+                                <td>
+                                    Toyota
+                                </td>
+                                <td class="test-5-to">
+                                    Corolla
+                                </td>
+                                <td class="test-5-at">с234сг</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- booking -->
+    <div hidden id="booking" class="container">
+        <section class="mt-5">
+
+            <div class="d-flex justify-content-between align-items-start">
+                <h2 class="mb-4">
+                    Бронирование
+                </h2>
+                <a href="index.html" class="btn btn-sm btn-secondary test-5-bgoback">Назад</a>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-baseline mb-4">
+                <h4>Информация о заказе</h4>
+            </div>
+
+            <table id="flightsTable" class="table table-hover table-bordered">
+                <tr>
+                    <th>Идентификатор рейса</th>
+                    <th>аэропорт вылета</th>
+                    <th>аэропорт прилета</th>
+                    <th>доступность</th>
+                    <th>Дата отправления</th>
+                    <th>Дата прибытия</th>
+                    <th>Стоимость рейса</th>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td class="test-5-fp">8000</td>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td class="test-5-fp">8000</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="text-right">
+                        <b>Финальная стоимость</b>
+                    </td>
+                    <td colspan="1" class="text-right test-5-price">16000</td>
+                </tr>
+            </table>
+            <div class="mt-3">
+                <button id="addFlight" class="btn btn-success">Добавить машину</button>
+            </div>
+        </section>
+
+        <section class="mt-5 mb-5">
+            <div class="d-flex justify-content-between align-items-baseline mb-4">
+                <h4>Данные о клиенте</h4>
+            </div>
+
+            <form data-page="profile" id="bookingForm">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Имя</label>
+                            <input type="text" class="form-control test-5-name w-100">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Фамилия</label>
+                            <input type="text" class="form-control test-5-last w-100">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Отчество</label>
+                            <input type="text" class="form-control test-5-dob">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Номер телефон</label>
+                            <input type="text" class="form-control test-5-doc">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Паспортные данные</label>
+                            <input type="text" class="form-control test-5-doc">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Дата рождения</label>
+                            <input type="date" class="form-control test-5-doc">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-success mt-4 form-control test-5-book">Забронировать</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- login -->
+    <div hidden id="login" class="container auth-pages">
+
+        <section class="mt-5 w-75">
+            <h2 class="mb-5 text-center">Log in</h2>
+
+            <form data-page="profile" id="loginForm">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- is-invalid class show error message -->
+                        <input name="credentials" type="text" class="form-control is-invalid test-1-fpn" placeholder="Телефон">
+                        <div class="invalid-feedback test-1-emph">Error message</div>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <input name="credentials" type="password" class="form-control test-1-fps" placeholder="Пароль">
+                        <div class="invalid-feedback test-1-emps">Error message</div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <button id="loginButton" class="btn btn-primary w-100 test-1-fbs">Войти</button>
+                        <div class="text-center mt-2">
+                            Нет аккаунта? <a href="register.html" class="test-1-bsu">Зарегистрироваться</a>
+                            или
+                            <a href="index.html" class="test-1-bbh">На главную</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- register -->
+    <div hidden id="register" class="container auth-pages">
+
+        <section class="mt-5 w-75">
+            <h2 class="mb-5 text-center">Registration</h2>
+
+            <form data-page="profile" id="registerForm">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <input name="credentials"  type="text" class="form-control is-invalid test-2-name" placeholder="Имя">
+                        <div class="invalid-feedback test-1-emfn">Error message</div>
+                    </div>
+                    <div class="col-12 mt-3 col-md-6 mt-md-0">
+                        <input name="credentials"  type="text" class="form-control is-invalid test-2-last" placeholder="Фамилия">
+                        <div class="invalid-feedback test-2-emln">Error message</div>
+                    </div>
+                    <div class="col-12 mt-3 col-md-6">
+                        <input name="credentials"  type="text" class="form-control test-2-phone" placeholder="Телефон">
+                        <div class="invalid-feedback test-2-empn">Error message</div>
+                    </div>
+                    <div class="col-12 mt-3 col-md-6">
+                        <input name="credentials"  type="text" class="form-control test-2-phone" placeholder="Номер удостоверения">
+                        <div class="invalid-feedback test-2-empn">Error message</div>
+                    </div>
+                    <div class="col-12 mt-3 col-md-6">
+                        <input name="credentials"  type="password" class="form-control test-2-pass" placeholder="Пароль">
+                        <div class="invalid-feedback test-2-empw">Error message</div>
+                    </div>
+                    <div class="col-12 mt-3 col-md-6">
+                        <input name="credentials"  type="password" class="form-control test-2-pass2" placeholder="Пароль еще раз">
+                        <div class="invalid-feedback test-2-empw2">Error message</div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <button id="registerButton" class="btn btn-primary w-100 test-2-btn">Зарегистрироваться</button>
+                        <div class="text-center mt-2">
+                            Уже есть аккаунт? <a href="login.html" class="test-2-blgn">Авторизуйтесь</a>
+                            или перейдите
+                            <a href="index.html" class="test-2-bbhm">На Главную</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- profile -->
+    <div hidden id="profile" class="container">
+        <section class="mt-5">
+            <div class="d-flex justify-content-between align-items-start">
+                <h2 class="mb-4">
+                    Привет,
+                    <span class="test-3-name">Имя</span>
+                    <span class="test-3-last">Фамилия</span>
+                    <span class="test-3-last">Отчество</span>
+                </h2>
+                <a class="btn btn-sm btn-secondary test-3-logout" href="index.html">Выйти</a>
+            </div>
+
+            <p>Кол-во бронирований: <span class="test-3-numflights">10</span> бронирований</p>
+        </section>
+
+        <section class="mt-5 favorites">
+            <h4 class="mb-4">Активные бронирования</h4>
+            <ul class="nav nav-tabs mt-3 mb-3">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="profile.html">Активные брони</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="history.html">История бронирования</a>
+                </li>
+            </ul>
+            <table class="table table-hover table-bordered">
+                <tr>
+                    <th>Идентификатор машины</th>
+                    <th>Марка авто</th>
+                    <th>Название авто</th>
+                    <th>Номер машины</th>
+                    <th>Дата Бронирования</th>
+                    <th>Дата Возврата</th>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                    <td class="test-5-fp">
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                    <td class="test-5-fp">
+                        <span class="test-5-dd">10-09-2020</span>
+                        at
+                        <span class="test-5-dt">09:30</span>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <span class="test-0-phone">8 (800) 100-10-10</span>
+                </div>
+                <div class="col-7 offset-2">
+                    <div class="d-flex justify-content-between">
+                        <a href="">Акции</a>
+                        <a href="/login">Бронирование</a>
+                        <a href="/register">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/searchFlights.js"></script>
+    <script src="./assets/js/dotenv.js"></script>
+    <script src="./assets/js/addFlight.js"></script>
+    <script src="./assets/js/register.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/notification.js"></script>
+</body>
+
+</html>
